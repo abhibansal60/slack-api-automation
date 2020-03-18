@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Slack channel operations and validations" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-03-18T17:25:11" hostname="Abhinav" time="154.252">
+  <properties/>
+  <testcase name="Create and join a channel" classname="Slack channel operations and validations" time="84.888"/>
+  <testcase name="Rename a channel" classname="Slack channel operations and validations" time="20.556"/>
+  <testcase name="Archive a channel" classname="Slack channel operations and validations" time="48.808"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
