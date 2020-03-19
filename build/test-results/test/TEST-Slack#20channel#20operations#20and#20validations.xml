@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Slack channel operations and validations" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-03-18T17:25:11" hostname="Abhinav" time="154.252">
+<testsuite name="Slack channel operations and validations" tests="3" skipped="0" failures="3" errors="0" timestamp="2020-03-19T05:35:02" hostname="Abhinav" time="9.017">
   <properties/>
-  <testcase name="Create and join a channel" classname="Slack channel operations and validations" time="84.888"/>
-  <testcase name="Rename a channel" classname="Slack channel operations and validations" time="20.556"/>
-  <testcase name="Archive a channel" classname="Slack channel operations and validations" time="48.808"/>
+  <testcase name="Create and join a channel" classname="Slack channel operations and validations" time="6.842">
+    <failure message="java.lang.AssertionError: Error: token_revoked" type="java.lang.AssertionError">java.lang.AssertionError: Error: token_revoked
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.slack.api.utils.RestUtil.postData(RestUtil.java:48)
+	at com.slack.api.stepdefinitions.Channel.lambda$new$1(Channel.java:23)
+	at ✽.user creates channel &quot;ab_channel_01&quot;(file:///C:/Users/abhi/git/slack-api-automation/src/test/resources/features/Channel.feature:8)
+</failure>
+  </testcase>
+  <testcase name="Rename a channel" classname="Slack channel operations and validations" time="0.954">
+    <failure message="java.lang.AssertionError: Error: token_revoked" type="java.lang.AssertionError">java.lang.AssertionError: Error: token_revoked
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.slack.api.utils.RestUtil.getData(RestUtil.java:70)
+	at com.slack.api.utils.RestUtil.fetchChannelList(RestUtil.java:75)
+	at com.slack.api.utils.RestUtil.getChannelAttribute(RestUtil.java:80)
+	at com.slack.api.stepdefinitions.Channel.lambda$new$3(Channel.java:32)
+	at ✽.user renames the channel &quot;ab_channel_01&quot; with &quot;test_ab_channel_01&quot;(file:///C:/Users/abhi/git/slack-api-automation/src/test/resources/features/Channel.feature:16)
+</failure>
+  </testcase>
+  <testcase name="Archive a channel" classname="Slack channel operations and validations" time="1.221">
+    <failure message="java.lang.AssertionError: Error: token_revoked" type="java.lang.AssertionError">java.lang.AssertionError: Error: token_revoked
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.slack.api.utils.RestUtil.getData(RestUtil.java:70)
+	at com.slack.api.utils.RestUtil.fetchChannelList(RestUtil.java:75)
+	at com.slack.api.utils.RestUtil.getChannelAttribute(RestUtil.java:80)
+	at com.slack.api.stepdefinitions.Channel.lambda$new$5(Channel.java:42)
+	at ✽.user archives the channel &quot;test_ab_channel_01&quot;(file:///C:/Users/abhi/git/slack-api-automation/src/test/resources/features/Channel.feature:24)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

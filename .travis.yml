@@ -7,4 +7,5 @@ sudo: required
 jdk: oraclejdk8
 
 script:
-  - chmod +x ./gradlew test
+  - ./gradlew build
+  - ./gradlew test
