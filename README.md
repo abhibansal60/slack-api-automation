@@ -32,11 +32,15 @@ A BDD API Automation framework for slack.
 
 1. Clone the repo
 2. Set JAVA_HOME and GRADLE_HOME on your system(if not already done)
-3. Open command prompt or terminal
-4. Run the following command:
+3. Go to src/test/resources/test.properties and update the value for the bearer.token [The one already there is disabled]
+4. Open command prompt or terminal
+5. Run the following command:
     `gradle test`
     
+#Channel.feature Description
 
+Channel.feature, consists of three scenarios with tags join, rename and archive. Which can run both as dependent or independently.
 
+In join scenario you have to provide the value for example. [To keep a control of the channels we are creating]
 
-
+In Rename and Archive providing the values for example isd optional, you can keep the channel Examples as blank providing blank values for within the || symbols below example headers, channel and newname
