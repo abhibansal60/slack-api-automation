@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Slack channel operations and validations" tests="3" skipped="0" failures="3" errors="0" timestamp="2020-03-19T05:35:02" hostname="Abhinav" time="9.017">
+<testsuite name="Slack channel operations and validations" tests="3" skipped="0" failures="3" errors="0" timestamp="2020-03-19T05:39:42" hostname="Abhinav" time="11.022">
   <properties/>
-  <testcase name="Create and join a channel" classname="Slack channel operations and validations" time="6.842">
+  <testcase name="Create and join a channel" classname="Slack channel operations and validations" time="7.013">
     <failure message="java.lang.AssertionError: Error: token_revoked" type="java.lang.AssertionError">java.lang.AssertionError: Error: token_revoked
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -10,7 +10,7 @@
 	at ✽.user creates channel &quot;ab_channel_01&quot;(file:///C:/Users/abhi/git/slack-api-automation/src/test/resources/features/Channel.feature:8)
 </failure>
   </testcase>
-  <testcase name="Rename a channel" classname="Slack channel operations and validations" time="0.954">
+  <testcase name="Rename a channel" classname="Slack channel operations and validations" time="2.864">
     <failure message="java.lang.AssertionError: Error: token_revoked" type="java.lang.AssertionError">java.lang.AssertionError: Error: token_revoked
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
@@ -21,7 +21,7 @@
 	at ✽.user renames the channel &quot;ab_channel_01&quot; with &quot;test_ab_channel_01&quot;(file:///C:/Users/abhi/git/slack-api-automation/src/test/resources/features/Channel.feature:16)
 </failure>
   </testcase>
-  <testcase name="Archive a channel" classname="Slack channel operations and validations" time="1.221">
+  <testcase name="Archive a channel" classname="Slack channel operations and validations" time="1.145">
     <failure message="java.lang.AssertionError: Error: token_revoked" type="java.lang.AssertionError">java.lang.AssertionError: Error: token_revoked
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)

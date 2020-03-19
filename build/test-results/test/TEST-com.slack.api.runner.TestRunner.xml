@@ -9,7 +9,7 @@
 
 3 Scenarios (?[31m3 failed?[0m)
 9 Steps (?[31m3 failed?[0m, ?[36m3 skipped?[0m, ?[32m3 passed?[0m)
-0m9.019s
+0m11.025s
 
 
 java.lang.AssertionError: Error: token_revoked
