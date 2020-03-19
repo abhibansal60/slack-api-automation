@@ -3,7 +3,8 @@ install: true
 
 os: linux
 dist: trusty
+sudo: required
 jdk: oraclejdk8
 
 script:
-  - ./gradlew build --scan -s test
+  - chmod +x ./gradlew build --scan -s test
