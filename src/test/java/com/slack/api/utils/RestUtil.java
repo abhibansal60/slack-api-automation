@@ -13,18 +13,27 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static java.util.Map.entry;
+//import static java.util.Map.entry;
 
 @Component
 public class RestUtil {
     @Autowired
     APIWorld apiWorld;
 
-    private Map<String,String> getHeaders(){
+
+
+   /* For Java 9 and above
+   private Map<String,String> getHeaders(){
         return Map.ofEntries(
                 entry("Authorization", "Bearer "+apiWorld.getBearerToken()),
                 entry("Accept","application/json")
         );
+    }*/
+    private Map<String,String> getHeaders(){
+            Map<String,String> myMap = new HashMap<>();
+            myMap.put("Authorization", "Bearer "+apiWorld.getBearerToken());
+            myMap.put("Accept","application/json");
+            return myMap;
     }
 
     public Response postData(String endPoint, String... paramsList){
