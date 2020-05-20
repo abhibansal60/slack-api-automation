@@ -15,10 +15,9 @@ project.ext {
 dependencies {
     testImplementation 'io.cucumber:cucumber-java8:' + cucumberVersion
     testImplementation 'io.cucumber:cucumber-junit:' + cucumberVersion
-    testCompile 'io.cucumber:cucumber-spring:' + cucumberVersion
-    testCompile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.0'
-    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.5.RELEASE'
-
+    testImplementation 'io.cucumber:cucumber-spring:' + cucumberVersion
+    testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '4.3.0'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.5.RELEASE'
 //Will uncomment for extent report implementation
 //    testCompile group: 'com.vimalselvam', name: 'cucumber-extentsreport', version: '3.0.2'
 //    testCompile group: 'com.aventstack', name: 'extentreports', version: '3.1.2'

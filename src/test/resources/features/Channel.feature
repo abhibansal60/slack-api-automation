@@ -9,7 +9,7 @@ Feature: Slack channel operations and validations
     Then user joins the channel
     Examples:
       | channel       |
-      | ab_channel_001 |
+      | ab_channel_005 |
 
   @Rename
   Scenario Outline: Rename a channel
@@ -17,7 +17,7 @@ Feature: Slack channel operations and validations
     Then validate channel is renamed successfully
     Examples:
       | channel       | newname            |
-      | ab_channel_001 | test_ab_channel_001 |
+      | test_ab_channel_006 | test_ab_channel_006 |
 
   @Archive
   Scenario Outline: Archive a channel
@@ -25,6 +25,6 @@ Feature: Slack channel operations and validations
     Then validate channel is archived successfully
     Examples:
       | channel            |
-      | test_ab_channel_001 |
+      | test_ab_channel_005 |
 
 
