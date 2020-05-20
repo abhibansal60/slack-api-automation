@@ -10,10 +10,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources",
         glue ="com.slack.api.stepdefinitions",
+        tags = "@Archive",
         plugin = {"json:target/cucumber-report.json",
-                "html:target/cucumber-report"
+                "html:target/cucumber-report",
+                "pretty"
                 },
-        strict = true
+        strict = true, monochrome = false
 )
 public class TestRunner {
 }

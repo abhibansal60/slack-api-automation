@@ -2,6 +2,7 @@ package com.slack.api.utils;
 
 import com.jayway.jsonpath.JsonPath;
 import com.slack.api.world.APIWorld;
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import net.minidev.json.JSONArray;
@@ -13,6 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.config.RedirectConfig.redirectConfig;
 //import static java.util.Map.entry;
 
 @Component
